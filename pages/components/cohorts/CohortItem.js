@@ -21,4 +21,4 @@ function CohortItem(props) {
     );
 }
 
-export default MeetupItem;
+export default CohortItem;

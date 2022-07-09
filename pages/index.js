@@ -1,6 +1,5 @@
 import CohortList from "../components/cohorts/CohortList"
 import Layout from "../components/layout/Layout"
-import Link from "next/link"
 
 const TEST_ARRAY = [
     {
@@ -39,9 +38,11 @@ const TEST_ARRAY = [
 ];
 
 function Homepage() {
+    return (
     <Layout>
-    return <CohortList cohorts={TEST_ARRAY}/>
+        <CohortList cohorts={TEST_ARRAY}/>
     </Layout>
-    }       
+    );
+}       
 
 export default Homepage;

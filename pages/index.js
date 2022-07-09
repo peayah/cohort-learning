@@ -36,10 +36,16 @@ const TEST_ARRAY = [
     }
 ];
 
-function Homepage() {
-    return (
-        <CohortList cohorts={TEST_ARRAY}/>
-    );
-}       
+function Homepage(props) {
+    return <CohortList cohorts={props.cohorts}/>
+}
+export async function getStaticProps() {
+    // fetch data from API
+    return {
+        props: {
+            cohorts: TEST_ARRAY
+        }
+    };
+}
 
 export default Homepage;

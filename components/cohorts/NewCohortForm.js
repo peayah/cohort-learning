@@ -49,7 +49,7 @@ function NewCohortForm(props) {
                     <input type='text' required id='day' ref={dayInputRef} />
                 </div>
                 <div className={classes.control}>
-                    <label htmlFor='time'>Address</label>
+                    <label htmlFor='time'>Time</label>
                     <input type='text' required id='time' ref={timeInputRef} />
                 </div>
                 <div className={classes.control}>

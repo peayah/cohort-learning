@@ -13,4 +13,38 @@ function CohortDetails() {
     );
 }
 
+export async function getStaticPaths() {
+    return{
+        fallback:false,
+        paths: [
+            {
+                parems: {
+                    cohortId: "c1"
+                }
+            }
+        ]
+    }
+}
+
+export async function getStaticProps(context) {
+    // fetch data for single cohort
+
+    return {
+        props: {
+            cohortData: {
+                image: "",
+                id: "",
+                title: "",
+                day: "",
+                time: "",
+                address: "",
+                description: ""
+            
+
+            }
+        }
+    }
+}
+
+
 export default CohortDetails

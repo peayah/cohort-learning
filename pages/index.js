@@ -1,5 +1,4 @@
 import CohortList from "../components/cohorts/CohortList"
-import Layout from "../components/layout/Layout"
 
 const TEST_ARRAY = [
     {
@@ -39,9 +38,7 @@ const TEST_ARRAY = [
 
 function Homepage() {
     return (
-    <Layout>
         <CohortList cohorts={TEST_ARRAY}/>
-    </Layout>
     );
 }       
 
